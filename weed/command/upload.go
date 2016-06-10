@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/chrislusf/seaweedfs/weed/operation"
-	"github.com/chrislusf/seaweedfs/weed/security"
+	"github.com/030io/seaweedfs/weed/operation"
+	"github.com/030io/seaweedfs/weed/security"
 )
 
 var (

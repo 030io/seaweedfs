@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/chrislusf/raft"
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/operation"
+	"github.com/030io/seaweedfs/weed/glog"
+	"github.com/030io/seaweedfs/weed/operation"
 )
 
 // Handles incoming RAFT joins.

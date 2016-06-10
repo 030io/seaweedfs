@@ -17,8 +17,8 @@ import (
 	"time"
 
 	"github.com/chrislusf/raft"
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/topology"
+	"github.com/030io/seaweedfs/weed/glog"
+	"github.com/030io/seaweedfs/weed/topology"
 	"github.com/gorilla/mux"
 )
 

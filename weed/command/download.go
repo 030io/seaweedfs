@@ -8,8 +8,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/chrislusf/seaweedfs/weed/operation"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/030io/seaweedfs/weed/operation"
+	"github.com/030io/seaweedfs/weed/util"
 )
 
 var (

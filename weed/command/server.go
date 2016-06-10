@@ -10,10 +10,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/server"
-	"github.com/chrislusf/seaweedfs/weed/storage"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/030io/seaweedfs/weed/glog"
+	"github.com/030io/seaweedfs/weed/server"
+	"github.com/030io/seaweedfs/weed/storage"
+	"github.com/030io/seaweedfs/weed/util"
 	"github.com/gorilla/mux"
 )
 

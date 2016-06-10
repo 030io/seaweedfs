@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/klauspost/crc32"
 
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/030io/seaweedfs/weed/util"
 )
 
 var table = crc32.MakeTable(crc32.Castagnoli)

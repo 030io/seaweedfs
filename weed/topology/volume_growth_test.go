@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/chrislusf/seaweedfs/weed/sequence"
-	"github.com/chrislusf/seaweedfs/weed/storage"
+	"github.com/030io/seaweedfs/weed/sequence"
+	"github.com/030io/seaweedfs/weed/storage"
 )
 
 var topologyLayout = `

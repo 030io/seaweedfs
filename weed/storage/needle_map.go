@@ -6,7 +6,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/030io/seaweedfs/weed/util"
 )
 
 type NeedleMapType int

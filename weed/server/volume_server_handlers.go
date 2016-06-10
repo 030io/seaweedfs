@@ -3,7 +3,7 @@ package weed_server
 import (
 	"net/http"
 
-	"github.com/chrislusf/seaweedfs/weed/stats"
+	"github.com/030io/seaweedfs/weed/stats"
 )
 
 /*

@@ -3,7 +3,7 @@ package flat_namespace
 import (
 	"errors"
 
-	"github.com/chrislusf/seaweedfs/weed/filer"
+	"github.com/030io/seaweedfs/weed/filer"
 )
 
 type FlatNamespaceFiler struct {

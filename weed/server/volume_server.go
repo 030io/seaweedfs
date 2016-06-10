@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/security"
-	"github.com/chrislusf/seaweedfs/weed/storage"
+	"github.com/030io/seaweedfs/weed/glog"
+	"github.com/030io/seaweedfs/weed/security"
+	"github.com/030io/seaweedfs/weed/storage"
 )
 
 type VolumeServer struct {

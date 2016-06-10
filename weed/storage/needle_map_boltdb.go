@@ -6,8 +6,8 @@ import (
 
 	"github.com/boltdb/bolt"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/030io/seaweedfs/weed/glog"
+	"github.com/030io/seaweedfs/weed/util"
 )
 
 type BoltDbNeedleMap struct {

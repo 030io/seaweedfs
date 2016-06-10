@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/030io/seaweedfs/weed/util"
 
 	"net/url"
 )

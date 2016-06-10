@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
+	"github.com/030io/seaweedfs/weed/glog"
 )
 
 func TestXYZ(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 
 	"github.com/hashicorp/golang-lru"
 
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/030io/seaweedfs/weed/util"
 )
 
 var (

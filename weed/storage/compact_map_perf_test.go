@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/chrislusf/seaweedfs/weed/glog"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/030io/seaweedfs/weed/glog"
+	"github.com/030io/seaweedfs/weed/util"
 )
 
 func TestMemoryUsage(t *testing.T) {

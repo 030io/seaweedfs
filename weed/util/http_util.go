@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/chrislusf/seaweedfs/weed/security"
+	"github.com/030io/seaweedfs/weed/security"
 )
 
 var (

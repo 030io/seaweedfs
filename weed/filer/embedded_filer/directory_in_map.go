@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/chrislusf/seaweedfs/weed/filer"
-	"github.com/chrislusf/seaweedfs/weed/util"
+	"github.com/030io/seaweedfs/weed/filer"
+	"github.com/030io/seaweedfs/weed/util"
 )
 
 var writeLock sync.Mutex //serialize changes to dir.log
