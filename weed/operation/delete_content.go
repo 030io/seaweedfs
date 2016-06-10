@@ -26,13 +26,11 @@ func DeleteFile(master string, fileId string, jwt security.EncodedJwt) error {
 	if err != nil {
 		return fmt.Errorf("Failed to lookup %s:%v", fileId, err)
 	}
-	for i := 0; i < 5; i++ {
-		err = util.Delete(fileUrl, jwt)
-		if err == nil {
-			return nil
-		}
+	err = util.Delete(fileUrl, jwt)
+	if err != nil {
+		return fmt.Errorf("Failed to delete %s:%v", fileUrl, err)
 	}
-	return fmt.Errorf("Failed to delete %s:%v", fileUrl, err)
+	return nil
 }
 
 func ParseFileId(fid string) (vid string, key_cookie string, err error) {
@@ -40,7 +38,7 @@ func ParseFileId(fid string) (vid string, key_cookie string, err error) {
 	if commaIndex <= 0 {
 		return "", "", errors.New("Wrong fid format.")
 	}
-	return fid[:commaIndex], fid[commaIndex + 1:], nil
+	return fid[:commaIndex], fid[commaIndex+1:], nil
 }
 
 type DeleteFilesResult struct {
@@ -99,15 +97,15 @@ func DeleteFiles(master string, fileIds []string) (*DeleteFilesResult, error) {
 			for _, fid := range fidList {
 				values.Add("fid", fid)
 			}
-			jsonBlob, err := util.Post("http://" + server + "/delete", values)
+			jsonBlob, err := util.Post("http://"+server+"/delete", values)
 			if err != nil {
-				ret.Errors = append(ret.Errors, err.Error() + " " + string(jsonBlob))
+				ret.Errors = append(ret.Errors, err.Error()+" "+string(jsonBlob))
 				return
 			}
 			var result []DeleteResult
 			err = json.Unmarshal(jsonBlob, &result)
 			if err != nil {
-				ret.Errors = append(ret.Errors, err.Error() + " " + string(jsonBlob))
+				ret.Errors = append(ret.Errors, err.Error()+" "+string(jsonBlob))
 				return
 			}
 			ret.Results = append(ret.Results, result...)
